@@ -1,0 +1,10 @@
+summary: Check dmesg logs after kdump.
+description: |
+    This test case is to validate dmesg files saved during kdump.
+
+contact: Kdump QE <kdump-qe-list@redhat.com>
+test: chmod a+x ./runtest.sh; ./runtest.sh
+framework: shell
+duration: 10m
+extra-summary: /kdump/analyse-dmesg
+extra-task: /kdump/analyse-dmesg

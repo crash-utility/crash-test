@@ -1,0 +1,9 @@
+summary: Build upstream crash-utility
+test: chmod a+x ./runtest.sh; ./runtest.sh
+framework: shell
+duration: 1h
+#require:
+# Install the dep pkgs
+#- gmp-devel
+#- mpfr-devel
+#- texinfo
