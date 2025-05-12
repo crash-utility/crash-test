@@ -1,0 +1,12 @@
+summary: Crashing system via SysRq-C.
+description: |
+    It crashes the system by using SysRq-C.
+contact: Kdump QE <kdump-qe-list@redhat.com>
+test: chmod a+x ./runtest.sh; ./runtest.sh
+framework: shell
+duration: 1h
+extra-summary: /kdump/crash-sysrq-c
+extra-task: /kdump/crash-sysrq-c
+require: kexec-tools
+id: 763678d7-158c-41b4-a199-3ebbc188dd9b
+restart-on-exit-code: 255
