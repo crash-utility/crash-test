@@ -14,6 +14,8 @@ test: chmod a+x ./runtest.sh; ./runtest.sh
 framework: shell
 require:
   - kexec-tools
+  - kdump-utils
+  - makedumpfile
 duration: 10m
 extra-summary: /kdump/config-any
 extra-task: /kdump/config-any
