@@ -443,7 +443,8 @@ RestartKdump()
     fi
 
     if grep -v -E "$skip_pat" ${log_file} |  grep -i -E "can't|error|warn|miss|No such file or directory|command not found";  then
-        Warn 'Restarting kdump reported above warn/error message'
+        Skip 'Restarting kdump reported above warn/error message'
+        Report
     fi
     sync;
     [ "$NOKDUMPRD" != true ] && ReportKdumprd
