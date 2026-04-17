@@ -406,7 +406,7 @@ InstallKernel()
     fi
 
     if [ "${retval}" -eq 0 ]; then
-        LogRun "rpm -Uvh --nodeps --force temp/*.rpm"
+        LogRun "rpm -Uvh --nodeps --force --nosignature temp/*.rpm"
         retval=$?
     fi
     rm -rf temp
